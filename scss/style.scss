@@ -148,3 +148,25 @@ section {
         }
     }
 }
+
+footer {
+    background-color: black;
+    @include clearfix;
+
+    .logo {
+        border-bottom: 1px solid $main-red;
+        clear: both;
+    }
+
+    address, .map {
+        margin: 2em;
+    }
+
+    address {
+        float: left;
+    }
+
+    .map {
+        float: right;
+    }
+}
