@@ -114,6 +114,17 @@ section {
 }
 
 #pricing {
+    text-align: center;
+
+    .pricing_btn {
+        display: none;
+        padding: 1em 3em;
+        color: white;
+        background-color: $main-red;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
     table {
         margin: 0 auto;
         width: 60%;
@@ -189,9 +200,53 @@ footer {
 
     footer {
         text-align: center;
-        
+
         address, .map {
             float: none;
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        height: auto;
+        background-image: none;
+        background-color: black;
+
+    h1 {
+        margin-top: 2em;
+    }
+
+    header {
+        nav {
+            width: 100%;
+            text-align: center;
+            ul {
+                li {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+    #catalog {
+        .column {
+            width: 100%;
+        }
+    }
+
+    #pricing {
+        .pricing_btn {
+            display: inline-block;
+        }
+
+        table {
+            display: none;
+        }
+    }
+
+    footer {
+        padding: 2em;
     }
 }
